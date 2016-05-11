@@ -9,8 +9,8 @@ a = []
 for x in range(9):
     a.append(int(input()))
 R = -1
-max_2 = -1
-max_n = -1
+max_2 = -1 # Чётные максимумы
+max_n = -1 # Нечётные максимумы
 for x in range(n-9):
     y = int(input())
     if a[0] % 2 == 0 and a[0] > max_2:
