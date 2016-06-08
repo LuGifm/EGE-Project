@@ -50,7 +50,7 @@ for x in range(n):
         if m > max_one:
             max_one = m
     if m % 3 == 2 and m > max_two:
-        m = max_two
+        max_two = m
 R_1 = max_null_two + max_null_one
 R_2 = max_two + max_one
 if R_1 > 0 or R_2 > 0:
