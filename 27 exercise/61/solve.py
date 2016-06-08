@@ -44,7 +44,7 @@ for x in range(n):
         if m > max_null_one:
             max_null_two = max_null_one
             max_null_one = m
-        elif m < max_null_two:
+        elif m > max_null_two:
             max_null_two = m
     if m % 3 == 1:
         if m > max_one:
@@ -59,10 +59,7 @@ else:
     R_max = 1
 print("Вычесленное контрольное значение:", R_max, sep=' ')
 R = int(input())
-if R % 3 != 0:
-    print("Контроль не пройден.")
+if R_max == R:
+    print('Контроль пройден.')
 else:
-    if R_max == R:
-        print('Контроль пройден.')
-    else:
-        print('Контроль не пройден.')
+    print('Контроль не пройден.')
