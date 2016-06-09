@@ -50,11 +50,8 @@ for x in range(n-6):
         a[0] = a[1]
     elif a[1] % 2 == 0:
         pass
-    a[1] = a[2]
-    a[2] = a[3]
-    a[3] = a[4]
-    a[4] = a[5]
-    a[5] = tmp
+    a.pop(1)
+    a.append(tmp)
 if R > 1000000:
     R = -1
 print(R)
