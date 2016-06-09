@@ -46,7 +46,7 @@ d = int(input())
 amin = 0
 bmin = d
 for x in range(n):
-    a,b = map(int,input())
+    a,b = map(int,input().split())
     amin = a+amin
     bmin = min(amin+d, bmin+b)
 print(bmin)
