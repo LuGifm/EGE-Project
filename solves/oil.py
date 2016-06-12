@@ -12,7 +12,7 @@ for x in range(n):
                 min_1 = (company, street, prise, 1)
             elif prise == min_1[2]:
                 min_1 = (min_1[0], min_1[1], min_1[2], min_1[3]+1)
-        elif prise <= min_2:
+        elif prise <= min_2[2]:
             if prise < min_2[2]:
                 min_2 = (company, street, prise, 1)
             elif prise == min_2[2]:
